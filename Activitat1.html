@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marxa Senderista Vilovi De onyar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		/* Afegir animacions */
+		#main-section {
+			animation-name: slide;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+		
+		@keyframes slide {
+			from {
+				opacity: 0;
+				transform: translateY(-50px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		/* Afegir animacions al menu */
+		#menu-section {
+			animation-name: fade;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes fade {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		/* Afegir animacions */
+		#form-section {
+			animation-name: zoom;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes zoom {
+			from {
+				opacity: 0;
+				transform: scale(0.5);
+			}
+			to {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Entrada principal -->
+	<section id="main-section" class="container my-5">
+		<div class="jumbotron text-center" style="background-color: #9cbfea;">
+			<h1 class="animate__animated animate__bounce" style="color: #ff6600;">L'Ajuntament de Vilovi De onyar</h1>
+			<h2 class="animate__animated animate__bounce" style="color: #006699;">Marxa Senderista Anual</h2>
+			<img src="SenderismePortada.jpg" style="max-width: 50%; animation: pulse 2s infinite;">
+			<p>Data: 24 i 25 de juny a les 9:00</p>
+			<p>Preu: 12€</p>
+			<p>A que esperes per apuntar-te!</p>
+		</div>
+	</section>
+	
+	<!--Incloure animate.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	
+	<!--Incloure animate.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<!--Mapes -->
+	<section class="container my-5">
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="card">
+			  <div class="card-header">
+				<h3>Ruta curta de 16 Km</h3>
+			  </div>
+			  <div class="card-body">
+				<p>Mapa Ruta 16KM</p>
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=13jtgsyK1Ojprf2pCHtqdC6gMI2STu78&ehbc=2E312F" width="420" height="340"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h3>Ruta llarga de 25 Km</h3>
+					</div>
+					<div class="card-body">
+						<p>Mapa Ruta 25KM</p>
+						<iframe src="https://www.google.com/maps/d/u/0/embed?mid=16AxKAr6fNIfyUgVCe55QQ0NDTNPyxnY&ehbc=2E312F" width="420" height="340"></iframe>
+						<img src="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Imatges -->
+	<section class="container my-5">
+		<h2>Imatges del que es veurà a la ruta</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="Viloviruta1.jpg" class="img-fluid animacio-girar">
+			</div>
+			<div class="col-md-4">
+				<img src="Viloviruta2.jpg" class="img-fluid animacio-girar">
+			</div>
+			<div class="col-md-4">
+				<img src="Viloviruta3millor.JPG" style="max-width: 112%" class="animacio-girar"> 
+			</div>
+		</div>
+	</section>
+	
+	<style>
+	.animacio-girar:hover {
+	  animation: girar 1s ease-in-out;
+	}
+	
+	@keyframes girar {
+	  0% {
+		transform: rotate(0deg);
+	  }
+	  100% {
+		transform: rotate(360deg);
+	  }
+	}
+	</style>
+
+	<!-- Menu -->
+	<section id="menu-section" class="container my-5">
+		<h2>Menú del dinar popular al finalitzar la marxa (14:30)</h2>
+		<div class="card">
+			<div class="row no-gutters">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h3>Menú</h3>
+						<ul>
+							<li>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <img src="paella-popular.jpg" alt="Paella" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                  Paella Popular
+                                </div>
+                              </div>
+                            </li>
+							<li>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <img src="Festa costellar.jpg" alt="Costellam de tocino amb pataques al caliu" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                  Costellam de tocino amb pataques al caliu
+                                </div>
+                              </div>
+                            </li>
+							<li>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <img src="tartadelavinyanyam.jpg" alt="Fruita, flam, iogurt i pastís de xocolata a escollir" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                  Fruita, flam, iogurt i pastís de xocolata a escollir
+                                </div>
+                              </div>
+                            </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Formulari de registre -->
+	<section id="form-section" class="container my-5">
+		<form action="#" method="POST" enctype="multipart/form-data">
+			<h2>Inscriu-te a la Marxa Senderista</h2>
+			<div class="form-group">
+				<label for="nom">Nom:</label>
+				<input type="text" class="form-control" id="nom" name="nom" required>
+			</div>
+			<div class="form-group">
+				<label for="cognoms">Cognoms:</label>
+				<input type="text" class="form-control" id="cognoms" name="cognoms" required>
+			</div>
+			<div class="form-group">
+				<label for="dni">DNI:</label>
+				<input type="text" class="form-control" id="dni" name="dni" required>
+			</div>
+			<div class="form-group">
+				<label for="telefon">Telèfon:</label>
+				<input type="tel" class="form-control" id="telefon" name="telefon" required>
+			</div>
+			<div class="form-group">
+				<label for="mail">Mail:</label>
+				<input type="email" class="form-control" id="mail" name="mail" required>
+			</div>
+			<div class="form-group">
+				<label for="data-naixement">Data de naixement:</label>
+				<input type="date" class="form-control" id="data-naixement" name="data-naixement" required>
+			</div>
+			<div class="form-group">
+				<label for="cp">CP (5 números):</label>
+				<input type="text" class="form-control" id="cp" name="cp" minlength="5" maxlength="5" required>
+			</div>
+			<div class="form-group">
+				<label for="direccio">Direcció:</label>
+				<input type="text" class="form-control" id="direccio" name="direccio" required>
+			</div>
+			<div class="form-group">
+				<label for="sexe">Sexe:</label>
+				<select class="form-control" id="sexe" name="sexe" required>
+					<option value="home">Home</option>
+					<option value="dona">Dona</option>
+					<option value="no-indicar">No ho vull indicar</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="sexe">Te alguna malaltia al cor?</label>
+				<select class="form-control" id="sexe" name="sexe" required>
+					<option value="si">Si</option>
+					<option value="no">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="sexe">Te alguna alergia?</label>
+				<select class="form-control" id="sexe" name="sexe" required>
+					<option value="si">Si</option>
+					<option value="no">No</option>
+				</select>
+			</div>
+					<div id="alergia-details">
+						<label for="alergies">Quines alèrgies?</label>
+						<input type="text" class="form-control" id="alergies" name="alergies">
+					</div>
+					<div class="form-group">
+						<label for="sexe">Per ultim,escull la teva preferència sobre el postre</label>
+						<select class="form-control" id="sexe" name="sexe" required>
+							<option value="fruitaS">Fruita</option>
+							<option value="flam">Flam</option>
+							<option value="iogurt">Iogurt</option>
+							<option value="pastís de xocolata">Pastís de xocolata</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label for="marxa" class="form-label">A quina marxa t'apuntes? *</label>
+						<select class="form-select" id="marxa" required>
+							<option value="">Selecciona una opció</option>
+							<option value="curta">Ruta curta (16 Km)</option>
+							<option value="llarga">Ruta llarga (25 Km)</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label for="puntuacio" class="form-label">Puntuació sobre les rutes escollides enguany *</label>
+						<input type="range" class="form-range" min="1" max="10" step="1" id="puntuacio" required>
+					</div>
+				</div>
+			</div>
+
+
+  <!-- Justificant de pagament i boto -->
+  <div class="form-group">
+    <label for="photo">Envia el teu justificant de pagament (foto)</label>
+    <input type="file" class="form-control-file" id="photo" name="photo" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
